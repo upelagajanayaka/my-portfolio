@@ -42,7 +42,7 @@ export default function Hero() {
                 {/* Right: Image */}
                 <div className="flex justify-center md:justify-end">
                     <Image
-                        src="/images/R.gif"
+                        src="/images/R.png"
                         alt="Camera"
                         width={480}
                         height={480}
