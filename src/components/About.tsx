@@ -61,7 +61,7 @@ export default function About() {
                     >
                         <div className="w-64 h-64 relative rounded-3xl overflow-hidden shadow-xl border-4 border-indigo-500">
                             <Image
-                                src="/images/T.png"
+                                src="/images/c.jpg"
                                 alt="Upela Gajanayaka"
                                 fill
                                 className="object-cover"
