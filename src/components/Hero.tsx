@@ -16,8 +16,8 @@ export default function Hero() {
                 {/* Left: Content */}
                 <div className="space-y-6 text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-white">
-                        HELLO I&apos;M, <br />
-                        Ujela Gajanayaka <span className="underline decoration-indigo-400"> A Passionate Web Developer</span>
+                        Hello &apos;<br />I'm Ujela Gajanayaka
+                        <span className="underline decoration-indigo-400"> A Passionate Web Developer</span>
                     </h1>
                     <p className="text-gray-300 text-base md:text-lg max-w-md mx-auto md:mx-0">
                         I build modern, responsive websites using Next.js, TypeScript, Tailwind CSS and more.
@@ -34,7 +34,7 @@ export default function Hero() {
                             href="#studio"
                             className="flex items-center gap-2 border border-white px-6 py-3 rounded-md text-white hover:bg-white hover:text-black transition"
                         >
-                            <PlayCircle size={18} /> My Studio
+                            <PlayCircle size={18} /> My Project
                         </Link>
                     </div>
                 </div>
