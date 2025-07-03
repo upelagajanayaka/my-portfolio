@@ -16,11 +16,12 @@ export default function Hero() {
                 {/* Left: Content */}
                 <div className="space-y-6 text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-white">
-                        Through the lens, <br />
-                        we create <span className="underline decoration-indigo-400">magic</span>
+                        HELLO I'M, <br />
+                        Ujela Gajanayaka <span className="underline decoration-indigo-400"> A Passionate Web Developer</span>
                     </h1>
                     <p className="text-gray-300 text-base md:text-lg max-w-md mx-auto md:mx-0">
-                        We tell stories, evoke emotions, and turn visions into unforgettable visuals.
+                        I build modern, responsive websites using Next.js, TypeScript, Tailwind CSS and more.
+                        Let's bring your ideas to life!
                     </p>
                     <div className="flex justify-center md:justify-start gap-4">
                         <Link
