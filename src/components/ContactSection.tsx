@@ -59,7 +59,7 @@ export default function ContactSection() {
                                 Let&apos;s Connect
                             </h3>
                             <p className="text-sm leading-relaxed">
-                                I'm always open to discussing new projects, creative ideas, or collaboration
+                                I&apos;m always open to discussing new projects, creative ideas, or collaboration
                                 opportunities. Feel free to drop me a message or connect via socials below.
                             </p>
                         </div>

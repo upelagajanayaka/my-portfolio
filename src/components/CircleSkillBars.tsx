@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
-import { motion, useAnimation, useInView } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react'
+import { motion, useInView } from 'framer-motion'
 
 const skills = [
     { name: 'TypeScript', level: 90, color: '#38bdf8' },
@@ -44,13 +44,13 @@ function AnimatedCircle({
 
     const ref = useRef(null)
     const inView = useInView(ref, { once: true })
-    const controls = useAnimation()
+    const [currentValue, setCurrentValue] = useState(0)
 
     useEffect(() => {
         if (inView) {
-            controls.start({ value: level })
+            setCurrentValue(level)
         }
-    }, [inView, controls, level])
+    }, [inView, level])
 
     return (
         <div ref={ref} className="relative w-32 h-32 sm:w-36 sm:h-36">
@@ -78,13 +78,9 @@ function AnimatedCircle({
                 />
             </svg>
 
-            <motion.div
-                animate={controls}
-                initial={{ value: 0 }}
-                className="absolute inset-0 flex items-center justify-center text-center"
-            >
+            <motion.div className="absolute inset-0 flex items-center justify-center text-center">
                 <span className="text-xl font-bold text-gray-900 dark:text-white">
-                    {level}%
+                    {currentValue}%
                 </span>
             </motion.div>
 
@@ -94,3 +90,4 @@ function AnimatedCircle({
         </div>
     )
 }
+
