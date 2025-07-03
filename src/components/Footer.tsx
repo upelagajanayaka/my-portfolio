@@ -44,10 +44,10 @@ export default function Footer() {
                             <Mail size={16} /> <a href="mailto:your@email.com">your@email.com</a>
                         </li>
                         <li className="flex items-center gap-2">
-                            <Github size={16} /> <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                            <Github size={16} /> <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
                         </li>
                         <li className="flex items-center gap-2">
-                            <Linkedin size={16} /> <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                            <Linkedin size={16} /> <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
                         </li>
                     </ul>
                 </div>

@@ -7,7 +7,16 @@ import ProjectModal from './ProjectModal'
 
 const categories = ['All', 'Next.js', 'TypeScript', 'Tailwind CSS', 'AI', 'Firebase', 'YouTube']
 
-const projects = [
+type Project = {
+    title: string
+    image: string
+    description: string
+    details: string
+    tags: string[]
+    link: string
+}
+
+const projects: Project[] = [
     {
         title: 'Student Paper Sharing App',
         image: '/images/project1.jpg',
@@ -36,7 +45,7 @@ const projects = [
 
 export default function Projects() {
     const [activeCategory, setActiveCategory] = useState('All')
-    const [selectedProject, setSelectedProject] = useState<any>(null)
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
     const filtered = activeCategory === 'All'
         ? projects
@@ -60,8 +69,8 @@ export default function Projects() {
                             >
                                 <span
                                     className={`transition-colors ${activeCategory === cat
-                                            ? 'text-indigo-600 dark:text-indigo-400'
-                                            : ''
+                                        ? 'text-indigo-600 dark:text-indigo-400'
+                                        : ''
                                         }`}
                                 >
                                     {cat}

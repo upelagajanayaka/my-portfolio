@@ -30,8 +30,12 @@ export default function ContactSection() {
 
             toast.success('Message sent successfully!')
             form.reset()
-        } catch (error: any) {
-            toast.error(error.message)
+        } catch (error: unknown) {
+            if (error instanceof Error) {
+                toast.error(error.message)
+            } else {
+                toast.error('An unknown error occurred')
+            }
         } finally {
             setLoading(false)
         }
@@ -44,7 +48,7 @@ export default function ContactSection() {
                     Contact Me
                 </h2>
                 <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
-                    Let’s work together! I’d love to hear from you.
+                    Let&apos;s work together! I&apos;d love to hear from you.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -52,7 +56,7 @@ export default function ContactSection() {
                     <div className="flex flex-col justify-center gap-6 text-gray-700 dark:text-gray-300">
                         <div>
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                                Let's Connect
+                                Let&apos;s Connect
                             </h3>
                             <p className="text-sm leading-relaxed">
                                 I'm always open to discussing new projects, creative ideas, or collaboration
