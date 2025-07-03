@@ -5,11 +5,11 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-12 mt-20">
+        <footer className="bg-gray-100 dark:bg-gray-950 text-gray-950 dark:text-gray-300 py-12 mt-20">
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {/* Column 1: Branding */}
                 <div>
-                    <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Chad Giga</h4>
+                    <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Ujela gakanayaa</h4>
                     <p className="text-sm leading-relaxed">
                         Building beautiful, fast and accessible websites with love.
                     </p>
