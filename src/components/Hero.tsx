@@ -16,7 +16,7 @@ export default function Hero() {
                 {/* Left: Content */}
                 <div className="space-y-6 text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-white">
-                        Hello &apos;<br />I'm Ujela Gajanayaka
+                        Hello &apos;<br />I&apos;m Ujela Gajanayaka
                         <span className="underline decoration-indigo-400"> A Passionate Web Developer</span>
                     </h1>
                     <p className="text-gray-300 text-base md:text-lg max-w-md mx-auto md:mx-0">

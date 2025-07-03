@@ -9,7 +9,6 @@ import CircleSkillBars from '@/components/CircleSkillBars'
 import Projects from '@/components/Projects'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
-import SectionWrapper from '@/components/SectionWrapper'
 
 export default function Home() {
   return (
